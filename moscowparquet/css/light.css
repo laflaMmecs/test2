@@ -1,0 +1,876 @@
+* {
+	font-family: Manrope Thin;
+}
+.main-up {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-up-one{
+	display: flex;
+}
+.main-up-citata {
+	font-size: 18px;
+}
+.main-up-second{
+	display: flex;
+}
+.phone-mainlogo {
+	color:  rgb(255, 0, 0);
+	padding: 15px;
+	width: 40px;
+	height: 40px;
+}
+.geolok-mainlogo {
+	padding: 15px;
+	width: 40px;
+	height: 40px;
+}
+.ur-adress {
+	padding-left: 0px;
+	font-size: 18px;
+	font-family: Manrope Thin;
+}
+.number-phone {
+	font-size: 18px;
+	font-family: Manrope Thin;
+}
+.Pn-Pt {
+	font-size: 12px;
+	color: rgb(255, 0, 0);
+}
+.menu-glavniy {
+  background-color: white;
+  font-family: Manrope Thin;
+}
+.container-osnovnoi {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+.logo_glavniy {
+  background-image: url(/LogoBlack\ \(1\).png);
+  width: 400px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.menu_inner_glavniy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-theme {
+  font-size: 14px;
+}
+.h4 {
+  font-size: 14px;
+}
+.nav_glavniy {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_a_glavniy a {
+  text-transform: uppercase;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+.nav_a_glavniy a:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.nav_a_glavniy {
+  padding-left: 25px;
+}
+p {
+  color: rgb(255, 255, 255);
+}
+.temya {
+  display: flex;
+}
+.close{
+	width: 20px;
+	height: 25px;
+	padding: 0;
+	margin-top: 20px;
+}
+.temyaone {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	width: 250px;
+	height: 80px;
+	padding: 15px 15px 15px 15px;
+	margin: 0;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 15px;
+	font-weight: bold;
+	align-items: center;
+}
+.AboutUs {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+}
+.fon1 {
+  position: relative;
+  filter: brightness(40%);
+  width: 1200px;
+  height: 800px;
+}
+
+.img-text {
+  position: absolute;
+  top: 150px;
+  width: 700px;
+  margin-left: 250px;
+  height: 50px;
+  color: white;
+  font-size: 40px;
+  font-family: Manrope Thin;
+}
+.dopinfaAboutUs {
+  font-size: 20px;
+  font-family: Manrope Thin;
+  font-style: italic;
+  margin-left: 50px;
+}
+.btnAboutUs {
+  font-size: 20px;
+  font-family: Manrope Thin;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: auto;
+  padding: 0;
+  margin-left: 200px;
+  text-decoration: none;
+  padding: 10px;
+}
+.RedParquet {
+  color: white;
+  font-size: 40px;
+  font-family: Manrope Thin;
+  background-color: rgb(255, 0, 0);
+  padding: 5px;
+}
+.RedRub {
+  color: white;
+  font-size: 40px;
+  font-family: Manrope Thin;
+  background-color: rgb(255, 0, 0); 
+  padding: 5px;
+}
+.rev_slider-otzivi-zagalovok{
+  font-size: 30px;
+  padding: 0px 0px 0px 450px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.rev_slider-otzivi {
+  margin: auto; 
+  background-color:rgb(248, 248, 248);
+  width: 1000px;
+  padding-left: 10px;
+}
+.slide-itzivi {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.container-otzivi-slide{
+  display: flex;
+}
+.photo-otzivi {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  padding: auto;
+  margin: 0px 0px 0px 10px;
+}
+.name-otzivi {
+  color: rgb(11, 11, 11);
+  margin: auto;
+  font-size: 50px;
+}
+.text-otzivi {
+  width: 900px;
+  color: black;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 20px;
+}
+.slick-prev.slick-arrow{
+  background-color: black;
+  color: black;
+  border-radius: 50%;
+}
+.slick-next.slick-arrow{
+  background-color: black;
+  border-radius: 50%;
+  color: black;
+}
+.slick-active{
+  background-color: white;
+}
+/* ------------------- General ------------------- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #161616;
+	margin: 0;
+
+	padding-bottom: 140px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color: aqua; */
+}
+
+/* ------------------- Header ------------------- */
+
+.header-inner {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e3f0f7;
+}
+
+.header-inner-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heading-inner {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.26px;
+	line-height: 1;
+	margin: 0;
+}
+
+.heading-inner span {
+	display: inline-block;
+	line-height: 1;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 0.38px;
+}
+
+.social-icons {
+	display: flex;
+}
+
+.social-icon-link {
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+/* Для экранов с шириной от 0 до 1170px */
+@media (max-width: 1170px) {
+	.social-icon-link {
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+/* ------------------- Footer ------------------- */
+
+.footer {
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+.footer-cta-title {
+	font-size: 42px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+
+.footer-text {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.43px;
+}
+
+.footer-text a {
+	color: #4298e8;
+	text-decoration: underline;
+}
+
+.footer-cta-text {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 100;
+	letter-spacing: 0.43px;
+}
+
+.footer-cta-text a {
+	color: #4298e8;
+	text-decoration: underline;
+}
+
+/* Для экранов с шириной от 0 до 1170px */
+@media (max-width: 1170px) {
+	.footer-cta-title {
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+
+	.footer-cta-text {
+		font-size: 22px;
+	}
+}
+
+.footer-inner {
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Calc */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+/* ------------------- Calc ------------------- */
+.calc-wrapper {
+	padding-top: 50px;
+	padding-bottom: 75px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.heading {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.heading-title {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.48px;
+	text-align: center;
+}
+
+.heading-desc {
+}
+
+.calc-section {
+	padding: 40px 50px;
+	background-color: #f4f8fa;
+}
+
+.calc-section:nth-child(odd) {
+	padding: 40px 50px;
+	background-color: #fff;
+}
+
+.calc-title-light {
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+.title__inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title__inline + .title__inline {
+	margin-left: 10px;
+}
+
+.input-short {
+	width: 20px;
+}
+
+.radio-wrapper {
+	display: flex;
+	/* align-items: center; */
+}
+
+.radio-wrapper .radio {
+	margin-top: 9px;
+}
+
+.radio-wrapper:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.radio-wrapper .radio {
+	margin-right: 15px;
+	margin-top: 6px;
+}
+
+/* .radio-holder {
+	margin-right: 15px;
+}
+
+.radio-holder input{
+	margin-top: 6px;
+} */
+
+/* .radio {
+	margin-right: 15px;
+} */
+
+.input-wrapper {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.input-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.input-short {
+	width: 62px;
+	height: 36px;
+	border-radius: 4px;
+	border: 1px solid #9a9a9a;
+	font-size: 24px;
+	font-weight: 700;
+	color: #039be5;
+	text-align: center;
+}
+
+.input-wrapper .input-short:first-child {
+	margin-right: 20px;
+}
+
+.input-wrapper .input-short:last-child {
+	margin-left: 20px;
+}
+
+/* ------------ TYPO ------------ */
+
+.section-title {
+	margin-bottom: 20px;
+}
+
+.section-title--vertical-center {
+	align-items: center;
+}
+
+.title-bold {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.title-lite {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.note {
+	display: block;
+	font-weight: 300;
+	font-style: italic;
+	padding-top: 10px;
+	font-size: 16px;
+	color: #969696;
+}
+
+/* ------------ FORMS ------------ */
+
+.checkbox-wrapper {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.checkbox-wrapper .checkbox {
+	margin-right: 15px;
+}
+
+/* ------------ PRICE ------------ */
+.calc-price {
+	padding: 30px 50px;
+	/* border: 10px solid #7ac5ea; */
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(218, 243, 255);
+	background-color: white;
+	box-shadow: -10px 0px 25px rgba(143, 179, 195, 0.685);
+}
+
+.calc-price-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.calc-price-value {
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.hidden {
+	display: none;
+}
+
+.range-input {
+	width: 100%;
+}
+
+.rooms-wrapper {
+	display: flex;
+	flex-direction: start;
+	align-items: center;
+}
+
+.rooms-label {
+}
+.rooms-radio-real {
+	opacity: 0;
+	appearance: none;
+	height: 0;
+	width: 0;
+	margin: 0;
+}
+
+.rooms-radio-fake {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #e2e2e2;
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	/* font-weight: bold; */
+	cursor: pointer;
+}
+
+.rooms-radio-real:checked + .rooms-radio-fake {
+	background-color: rgb(255, 0, 0);;
+}
+/* тут pop up(кнопочка с заявкой) */
+.btn_pop_up {
+	text-align: center;
+}
+.btn_pop_up a {
+	font-family: Montserrat;
+	background-color:rgb(255, 0, 0);;
+	padding: 20px 50px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+}
+
+.pop_up {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 2;
+}
+
+#open_pop_up {
+	font-family: Montserrat;
+	background-color: rgb(255, 0, 0);;
+	padding: 20px 50px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+.pop_up_container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.pop_up_body {
+	margin: auto;
+	width: 500px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 15px 110px 15px;
+	position: relative;
+}
+
+.pop_up_body p{
+	font-size: 28px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #22262D;
+	margin-bottom: 40px;
+}
+
+.pop_up_body input{
+	display: block;
+	margin: 25px auto 0px auto;
+	width: 330px;
+	padding: 17px 20px;
+	background-color: rgb(236, 235, 235);
+	border-radius: 10px;
+	border: none;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 18px;
+	color: #89909F;
+}
+
+.pop_up_body input:focus{
+	outline: none;
+}
+
+.pop_up_body button {
+	cursor: pointer;
+	display: block;
+	width: 330px;
+	margin: 60px auto 0px auto;
+	padding: 20px 0px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	background-color: rgb(255, 0, 0);;
+}
+
+.pop_up.active{
+	display: block;
+}
+
+.pop_up_close  {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 21px;
+	cursor: pointer;
+}
+/*Сама страница ContactUs */
+.containerContactUs {
+	width: 1200px;
+	height: 800px;
+	box-sizing: border-box;
+}
+
+
+/* Регистрация*/
+
+.glavniyRegistracia{
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(0, 153, 255);
+    transition: 0.5s;
+}
+
+body.active {
+    background-color: red;
+}
+
+.containerRegistracia {
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+    position: relative;
+}
+.block {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+}
+
+.block_item{
+    width: 50%;
+}
+
+
+.block-item {
+    text-align: center;
+}
+
+.block-item_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.block-item_btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-box {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transition: 0.5s ease-in-out;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.form-box.active {
+    left: 50%;
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form_signin {
+    left: 0;
+    transition-delay: 0.25s;
+}
+.form_signup {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form_signin {
+    left: -100%;
+    transition-delay: 0.25s;
+}
+
+.form-box.active .form_signup {
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.form_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form_input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+}
+
+.form_btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+.form_btn_signup {
+    background-color: red;
+}
+
+
+
+.from_forgot {
+    color: #333;
+}
+
+
+/* Адаптив */
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 400px;
+        height: 650px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .block-item {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .form-box {
+        width: 100px;
+        height: 500px;
+        box-shadow: none;
+
+        top: 0;
+    }
+
+    .form-box.active {
+        top: 150px;
+        left: 0;
+    }
+}

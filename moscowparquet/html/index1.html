@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moscowparquet.org</title>
+    <link rel="stylesheet" href="/css/light.css" id="theme">
+</head>
+<body>
+    <div class="menu-glavniy">
+        <div class="container-osnovnoi">
+            <div class="main-up">
+                <div class="main-up-one">
+                    <img src="/img/phone.png" alt="" class="phone-mainlogo" width="100%">
+                    <div class="number-phone">+7 (925) 854-84-41<br><span class="Pn-Pt">Пн-Пт 10-18, Сб-Вс выходные</span></div>
+                </div>
+                <div class="main-up-citata">«Независимо от пола всегда надо быть хотя бы выше плинтуса»</div>
+                <div class="main-up-second">
+                    <img src="/img/geolok (2).png" alt="" class="geolok-mainlogo" width="2%">
+                    <div class="ur-adress">Москва<br> Шаболовка 42/2</div>
+                </div>
+            </div>
+            <br>
+            <div class="menu_inner_glavniy">
+                <div class="logo_glavniy"></div>
+                <div class="nav_glavniy">
+                    <li class="nav_a_glavniy"><a href="/html/index1.html">Главная</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/registracia.html">Авторизоваться</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/index.html">Укладка</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/Services.html">Реставрация</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/HappyClients.html">Отзывы клиентов</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/ContactUs.index.html">Связаться с нами</a></li>
+                </div>
+            </div>
+            <br>
+            <div class="blackTheme">
+                <div class="temyaone">
+                    <label class="temya" for="">
+                        <p class="textTemya">Включить темную тему?</p>
+                        <input type="checkbox" class="theme-checkbox">
+                        <button class="close">&times;</button>
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="AboutUs">
+                <img src="/img/8b647739221094a9b23729a92e21eb47.png" alt="" class="fon1">
+                <div class="img-text"> <span class="RedParquet">Укладка паркета, <br> паркетной и инженерной доски </span> <br> на стяжку и фанеру <br> в Москве и области от <span class="RedRub">500 руб./м²</span>
+                <br>
+                <br>
+                <div class="dopinfaAboutUs">
+                    Приступим к работам в день заказа.
+                    <br>
+                    Выработка бригады до 30 м ²/день.
+                </div>
+                <br>
+                <a href="/html/index.html" class="btnAboutUs">Расcчитать стоимость online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    let checkbox = document.querySelector('.theme-checkbox')
+
+    
+    if(localStorage.getItem('theme') == "true") {
+        theme.setAttribute('href', '../css/dark.css')
+        checkbox.checked = true
+    }
+
+    checkbox.onchange = function() {
+        if(this.checked) {
+            localStorage.setItem('theme', true)
+            theme.setAttribute('href', '../css/dark.css')
+            
+        } else {
+            localStorage.setItem('theme', false)
+            theme.setAttribute('href', '../css/light.css')
+            
+        }
+    }
+</script>
+<script>
+document.querySelector('body').onclick = function(e){
+    if(e.target.className != 'close') return
+    let temyaone = e.target.closest('.temyaone')
+    temyaone.remove()
+}
+</script>
+</body>
+</html>

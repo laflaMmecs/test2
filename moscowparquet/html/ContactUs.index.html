@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moscowparquet.org</title>
+    <link rel="stylesheet" href="/css/light.css" id="theme">
+</head>
+<body>
+    <div class="menu-glavniy">
+        <div class="container-osnovnoi">
+            <div class="main-up">
+                <div class="main-up-one">
+                    <img src="/img/phone.png" alt="" class="phone-mainlogo" width="100%">
+                    <div class="number-phone">+7 (925) 854-84-41<br><span class="Pn-Pt">Пн-Пт 10-18, Сб-Вс выходные</span></div>
+                </div>
+                <div class="main-up-citata">«Независимо от пола всегда надо быть хотя бы выше плинтуса»</div>
+                <div class="main-up-second">
+                    <img src="/img/geolok (2).png" alt="" class="geolok-mainlogo" width="2%">
+                    <div class="ur-adress">Москва<br> Шаболовка 42/2</div>
+                </div>
+            </div>
+            <br>
+            <div class="menu_inner_glavniy">
+                <div class="logo_glavniy"></div>
+                <div class="nav_glavniy">
+                    <li class="nav_a_glavniy"><a href="/html/index1.html">Главная</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/registracia.html">Авторизоваться</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/index.html">Укладка</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/Services.html">Реставрация</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/HappyClients.html">Отзывы клиентов</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/ContactUs.index.html">Связаться с нами</a></li>
+                </div>
+            </div>
+            <br>
+            <div class="blackTheme">
+                <div class="temyaone">
+                    <label class="temya" for="">
+                        <p class="textTemya">Включить темную тему?</p>
+                        <input type="checkbox" class="theme-checkbox">
+                        <button class="close">&times;</button>
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="containerContactUs">
+                <div class="button5"><a href="#" id="open_pop_up">Оставить заявку</a></div>
+                <div class="pop_up" id="pop_up">
+                    <div class="pop_up_container">
+                        <div class="pop_up_body" id="pop_up_body">
+                            <p>Оставить заказ</p>
+                            <form action="">
+                                <input type="text_1_pop_up" placeholder="Имя">
+                                <input type="text_2_pop_up" placeholder="Телефон">
+                                <button class="btn_pop_up">Оставить заказ</button>
+                            </form>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    const openPopUp = document.getElementById('open_pop_up');
+    const closePopUp = document.getElementById('pop_up_close');
+    const popUp = document.getElementById('pop_up');
+
+    openPopUp.addEventListener('click', function(e){
+        e.preventDefault();
+        popUp.classList.add('active');
+    })
+
+    closePopUp.addEventListener('click', () => {
+        popUp.classList.remove('active');
+    })
+</script>
+<script>
+    let checkbox = document.querySelector('.theme-checkbox')
+
+    
+    if(localStorage.getItem('theme') == "true") {
+        theme.setAttribute('href', '../css/dark.css')
+        checkbox.checked = true
+    }
+
+    checkbox.onchange = function() {
+        if(this.checked) {
+            localStorage.setItem('theme', true)
+            theme.setAttribute('href', '../css/dark.css')
+            
+        } else {
+            localStorage.setItem('theme', false)
+            theme.setAttribute('href', '../css/light.css')
+            
+        }
+    }
+</script>
+</body>
+</html>

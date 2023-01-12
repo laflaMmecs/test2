@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moscowparquet.org</title>
+    <link rel="stylesheet" href="/css/light.css" id="theme">
+</head>
+<body>
+    <div class="menu-glavniy">
+        <div class="container-osnovnoi">
+            <div class="main-up">
+                <div class="main-up-one">
+                    <img src="/img/phone.png" alt="" class="phone-mainlogo" width="100%">
+                    <div class="number-phone">+7 (925) 854-84-41<br><span class="Pn-Pt">Пн-Пт 10-18, Сб-Вс выходные</span></div>
+                </div>
+                <div class="main-up-citata">«Независимо от пола всегда надо быть хотя бы выше плинтуса»</div>
+                <div class="main-up-second">
+                    <img src="/img/geolok (2).png" alt="" class="geolok-mainlogo" width="2%">
+                    <div class="ur-adress">Москва<br> Шаболовка 42/2</div>
+                </div>
+            </div>
+            <br>
+            <div class="menu_inner_glavniy">
+                <div class="logo_glavniy"></div>
+                <div class="nav_glavniy">
+                    <li class="nav_a_glavniy"><a href="/html/index1.html">Главная</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/registracia.html">Авторизоваться</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/index.html">Укладка</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/Services.html">Реставрация</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/HappyClients.html">Отзывы клиентов</a></li>
+                    <li class="nav_a_glavniy"><a href="/html/ContactUs.index.html">Связаться с нами</a></li>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="blackTheme">
+                <label class="temya" for="">
+                    <p class="textTemya">Включить темную тему?</p>
+                    <input type="checkbox" class="theme-checkbox">
+                </label>
+            </div>
+            <br>
+            <br>
+            <main class="calc-wrapper">
+                <div class="container">
+                    <form id="form">
+                        <div class="heading">
+                            <h1 class="heading-title">Калькулятор реставрации паркета</h1>
+                            <p class="heading-desc">Базовая цена: 1 м² = 6 тыс. рублей</p>
+                        </div>
+    
+                        <!-- Площадь -->
+                        <div class="calc-section">
+                            <label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+                                <span class="title__inline">Площадь квартиры:</span>
+                                <input type="number" min="0" max="200" value="50" id="square-input" class="title__inline input-short" />
+                                <span class="title__inline">м²</span>
+                            </label>
+                            <input type="range" id="square-range" class="range-input" min="0" max="200" value="50" step="1" />
+                        </div>
+                        <!-- // Площадь -->
+    
+                        <!-- Мобильная адаптивность -->
+                        <!-- // Мобильная адаптивность -->
+    
+                        <!-- Мобильная адаптивность -->
+                        <div class="calc-section">
+                            <label class="checkbox-wrapper title-bold section-title"> Тип дома </label>
+                            <label class="radio-wrapper">
+                                <input type="radio" class="radio" name="building" value="1" checked />
+                                <div class="title-lite">Новострой</div>
+                            </label>
+                            <label class="radio-wrapper">
+                                <input type="radio" class="radio" name="building" value="1.1" />
+                                <div class="title-lite">
+                                    Вторичка
+                                    <span class="note">+10% к стоимости</span>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- // Мобильная адаптивность -->
+    
+                        <!-- Количество комнат -->
+                        <div class="calc-section">
+                            <label class="checkbox-wrapper title-bold section-title"> Количество комнат </label>
+                            <div class="rooms-wrapper">
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="0.8" />
+                                    <span class="rooms-radio-fake">C</span>
+                                </label>
+    
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="1" checked />
+                                    <span class="rooms-radio-fake">1</span>
+                                </label>
+    
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="1"  />
+                                    <span class="rooms-radio-fake">2</span>
+                                </label>
+    
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                                    <span class="rooms-radio-fake">3</span>
+                                </label>
+    
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                                    <span class="rooms-radio-fake">4</span>
+                                </label>
+    
+                                <label class="rooms-label">
+                                    <input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+                                    <span class="rooms-radio-fake">5</span>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- // Количество комнат -->
+    
+                        <!-- Дополнительные опции -->
+                        <!-- // Дополнительные опции -->
+    
+                        <!-- Стоимость ремонта -->
+                        <div class="calc-price">
+                            <div class="calc-price-title">Стоимость ремонта:</div>
+                            <div class="calc-price-value">
+                                <span id="total-price">0</span>
+                                рублей
+                            </div>
+                        </div>
+                        <!-- // Стоимость ремонта -->
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+<script>
+    //Элементы формы
+const squareInput = document.querySelector('#square-input');
+const squareRange = document.querySelector('#square-range');
+const inputs = document.querySelectorAll('input');
+
+//Радиокнопки
+const radioType = document.querySelectorAll('input[name="type"]');
+const radioBuilding = document.querySelectorAll('input[name="building"]');
+const radioRooms = document.querySelectorAll('input[name="rooms"]');
+
+
+
+const basePrice = 1500;
+const totalPriceElement = document.querySelector('#total-price');
+
+//Связка range с текстовым полем
+//Слушаем событие input
+squareRange.addEventListener('input', function() {
+    console.log('Input!!!!!');
+    squareInput.value = squareRange.value;
+})
+
+//Связка текстового поля с range
+squareInput.addEventListener('input', function() {
+    squareRange.value = squareInput.value;
+})
+
+function calculate() {
+    let totalPrice = basePrice * parseInt(squareInput.value);
+
+
+    for( const radio of radioBuilding ) {
+        if (radio.checked) {
+            totalPrice = totalPrice * parseFloat(radio.value);
+        } 
+    }
+
+    for( const radio of radioRooms ) {
+        if (radio.checked) {
+            totalPrice = totalPrice * parseFloat(radio.value);
+        } 
+    }
+
+    const formatter = new Intl.NumberFormat('ru');
+    totalPriceElement.innerText = formatter.format(totalPrice);
+}
+
+calculate();
+
+
+for (const input of inputs) {
+    input.addEventListener('input', function () {
+        calculate();
+    })
+}
+</script>
+<script>
+    let checkbox = document.querySelector('.theme-checkbox')
+
+    
+    if(localStorage.getItem('theme') == "true") {
+        theme.setAttribute('href', '../css/dark.css')
+        checkbox.checked = true
+    }
+
+    checkbox.onchange = function() {
+        if(this.checked) {
+            localStorage.setItem('theme', true)
+            theme.setAttribute('href', '../css/dark.css')
+            
+        } else {
+            localStorage.setItem('theme', false)
+            theme.setAttribute('href', '../css/light.css')
+            
+        }
+    }
+</script>
+</body>
+</html>
